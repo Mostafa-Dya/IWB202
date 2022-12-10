@@ -1,0 +1,297 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+
+  background: linear-gradient(336deg, #a5673d, #095252, #1d7a0e, #695dca, #99a312, #000000);
+  background-size: 1200% 1200%;
+
+  -o-animation: AnimationName 40s ease infinite;
+  animation: AnimationName 40s ease infinite;
+}
+
+body,
+div,
+form,
+input,
+select,
+p {
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  color: #eee;
+  text-align: center;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.fa-graduation-cap {
+  font-size: 72px;
+}
+
+.title {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+option:focus {
+  border: none;
+}
+
+option {
+  background: black;
+  border: none;
+}
+
+.button_final {
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  width: 10%;
+  margin: auto;
+  display: block;
+}
+
+
+#Button2:hover,
+.btn-item:hover {
+  background: #26a8e06e;
+}
+
+@media (min-width: 568px) {
+
+  html,
+  body {
+    height: 100%;
+  }
+
+
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+
+/* Capcha */
+
+#Button1 {
+  padding: 5px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: none;
+  background: #26a9e0;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  width: 80px;
+  margin: auto;
+
+}
+
+#mySidenav img {
+  padding: 5px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  transition: transform 2s ease-in-out;
+
+}
+
+#mySidenav img:hover {
+  transform: rotate(360deg);
+}
+
+#mySidenav img {
+  width: 45px;
+  color: white;
+}
+
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 33% 0%
+  }
+
+  50% {
+    background-position: 68% 100%
+  }
+
+  100% {
+    background-position: 33% 0%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 33% 0%
+  }
+
+  50% {
+    background-position: 68% 100%
+  }
+
+  100% {
+    background-position: 33% 0%
+  }
+}
+
+
+
+
+
+section table {
+  width: 80%;
+  table-layout: fixed;
+  margin: auto;
+}
+
+.tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 80%;
+  margin: auto;
+}
+
+.tbl-content {
+  height: auto;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 80%;
+  margin: auto;
+
+}
+
+section th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+section td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+th {
+  cursor: pointer;
+}
+
+.img-header {
+  width: 20px;
+  padding-bottom: 2px;
+}
+
+
+
+
+.bubble {
+  display: none;
+  z-index: 10;
+}
+
+.bubble:after {
+  content: '';
+  border-style: solid;
+}
+
