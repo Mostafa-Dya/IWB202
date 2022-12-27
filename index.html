@@ -133,7 +133,16 @@
       <button id="Button2" class="button_final" type="submit" onclick="return myFunction()">Save</button>
     </form>
   </div>
-
+  <select id="program">
+    <option value=""> All </option>
+    <option >ITE</option>
+    <option >BAIT</option>
+    <option >BACT</option>
+    <option >BSCM</option>
+    <option >BL</option>
+    <option >BTHM</option>
+    <option >TIC</option>
+</select>
   <section style="margin-bottom: 50px; margin-top: 100px;">
     <span>Table is Sorted OnCLick From Table Header Values</span>
     <table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
@@ -188,7 +197,11 @@
   <script>
     AOS.init();
   </script>
+    <script type="text/javascript">
 
+      document.getElementById("program").onchange = table_filtered;
+
+  </script>
 </body>
 
 </html>

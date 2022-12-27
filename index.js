@@ -72,7 +72,6 @@ rowNumber = 4;
 function addRow() {
   "use strict";
   var row = document.createElement("tr");
-  console.log(row);
   var td1 = document.createElement("td");
   var td2 = document.createElement("td");
   var td3 = document.createElement("td");
@@ -255,30 +254,49 @@ $('#convert-table').click(function () {
       ignoreColumns: column >= 0 ? [column] : []
     });
 
-  console.log(table);
   var json = JSON.stringify(table);
   var res = document.getElementById("res");
   res.value = json;
   for (let k in json) {
     newArray.push({'value': json[k]});
 }
-console.log(newArray)
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// filter table with select
+function table_filtered() {
+  // declaring varibles
+    let
+     select_value,
+     filter,
+      table,
+      table_row,
+       td,
+        selected_value;
+        // declaring ID`s
+    select_value = document.getElementById("program");
+    filter = select_value.value.toUpperCase();
+    table = document.getElementById("table");
+    table_row = table.getElementsByTagName("tr");
+    // putting for to loop to check table values
+    for (let i = 0; i < table_row.length; i++) {
+        td = table_row[i].getElementsByTagName("td")[3];
+        if (select_value=="all"){
+          table_row[i].style.display = "";
+        }
+        if (td) {
+            selected_value = td.textContent || td.innerText;
+  
+          // if value true show the table values else none because there is no value
+            if (selected_value.toUpperCase().indexOf(filter) > -1) {
+              table_row[i].style.display = "";
+            }else if(selected_value.toUpperCase().indexOf(filter)=="all"){
+              table_row[i].style.display = "";
+            }
+             else {
+              table_row[i].style.display = "none";
+            }
+        }
+  
+  
+    }
+  }
